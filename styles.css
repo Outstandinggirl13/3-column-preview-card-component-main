@@ -18,7 +18,7 @@
 body {
     background-color: var(--gray-100-background);
     font-family: "Lexend Deca", sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: var(--transparent-white-paragraphs);
 }
 
@@ -45,35 +45,35 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none;
-    width: 921px;
-    border-radius: 9px;
+    width: 57.5rem;
+    border-radius: 10px;
     overflow: hidden;
 }
 
 .card-component__items li {
-    padding: 48px;
+    padding: 3rem;
 }
 
 .card-component__items h2 {
     font-family: "Big Shoulders", sans-serif;
     font-weight: 700;
-    font-size: 40px;
-    margin: 35px 0 25px;
+    font-size: 2.5rem;
+    margin: 2.1875rem 0 1.5625rem;
     text-transform: uppercase;
     color: var(--gray-100-background);
 }
 
 .card-component__items p {
-    margin: 25px 0 83px;
-    line-height: 25px;
+    margin: 1.5625rem 0 5.25rem;
+    line-height: 1.5625rem;
 }
 
 .card-component__items button {
     background-color: transparent;
     border: 2px solid var(--gray-100-background);
     border-radius: 30px;
+    padding: 0.75rem 2rem;
     color: var(--gray-100-background);
-    padding: 12px 32px;
 }
 
 .card-component__items button:hover {
@@ -94,15 +94,36 @@ body {
 }
 
 .attribution {
-    font-size: 15px; 
+    font-size: 0.9375rem; 
     text-align: center;
     position: absolute;
     bottom: 0;
-    color: var(--green-950);
     width: 100%;
     padding: 1.25rem;
+    color: var(--green-950);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 37.5rem) {
+    .card-component__items {
+        flex-direction: column;
+        width: 20.5rem;
+    }
+
+    .section__card-component {
+        height: 100%;
+        margin: 5.5rem 0;
+    }
+
+    .card-component__items p {
+        margin: 1.5625rem 0;
+    }
+
+    .attribution {
+        position: static;
+        display: none;
+    }
 }
