@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary */
+    --gold--500: hsl(31, 77%, 52%);
+    --cyan-800: hsl(184, 100%, 22%);
+    --green-950: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --gray-100-background: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--gray-100-background);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: var(--transparent-white-paragraphs);
+}
+
+.section__card-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-component__sedans {
+    background-color: var(--gold--500);
+}
+
+.card-component__suvs {
+    background-color: var(--cyan-800);
+}
+
+.card-component__luxury {
+    background-color: var(--green-950);
+}
+
+.card-component__items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 921px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.card-component__items li {
+    padding: 48px;
+}
+
+.card-component__items h2 {
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 35px 0 25px;
+    text-transform: uppercase;
+    color: var(--gray-100-background);
+}
+
+.card-component__items p {
+    margin: 25px 0 83px;
+    line-height: 25px;
+}
+
+.card-component__items button {
+    background-color: transparent;
+    border: 2px solid var(--gray-100-background);
+    border-radius: 30px;
+    color: var(--gray-100-background);
+    padding: 12px 32px;
+}
+
+.card-component__items button:hover {
+    background-color: var(--gray-100-background);
+    cursor: pointer;
+}
+
+.card-component__sedans button:hover {
+    color: var(--gold--500);
+}
+
+.card-component__suvs button:hover {
+    color: var(--cyan-800);
+}
+
+.card-component__luxury button:hover {
+    color: var(--green-950);
+}
+
+.attribution {
+    font-size: 15px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: var(--green-950);
+    width: 100%;
+    padding: 1.25rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
