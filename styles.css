@@ -57,11 +57,11 @@ body {
 
 .card-component__items h2 {
     font-family: "Big Shoulders", sans-serif;
-    font-weight: 700;
     font-size: 2.5rem;
     margin: 2.1875rem 0 1.5625rem;
     text-transform: uppercase;
     color: var(--gray-100-background);
+    font-weight: 400;
 }
 
 .card-component__items p {
@@ -75,6 +75,7 @@ body {
     border-radius: 30px;
     padding: 0.75rem 2rem;
     color: var(--gray-100-background);
+    font-weight: 700;
 }
 
 .card-component__items button:hover {
