@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 1.25rem;
 }
 
 .card-component__sedans {
@@ -124,6 +125,5 @@ body {
 
     .attribution {
         position: static;
-        display: none;
     }
 }
