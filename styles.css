@@ -61,7 +61,7 @@ body {
     margin: 2.1875rem 0 1.5625rem;
     text-transform: uppercase;
     color: var(--gray-100-background);
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .card-component__items p {
